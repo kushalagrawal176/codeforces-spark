@@ -1,4 +1,4 @@
-# Problem Number - 1914C Game with Reverses  
+# Problem Number - 1914C Quests 
 **Problem Link:** [https://codeforces.com/problemset/problem/1914/C](https://codeforces.com/problemset/problem/1914/C)  
 
 ---
