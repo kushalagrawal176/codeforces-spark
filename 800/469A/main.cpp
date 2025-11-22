@@ -1,0 +1,32 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+
+    int p;
+    cin >> p;
+    set<int> levels;
+
+    for (int i = 0; i < p; i++) {
+        int a;
+        cin >> a;
+        levels.insert(a);
+    }
+
+    int q;
+    cin >> q;
+    for (int i = 0; i < q; i++) {
+        int a;
+        cin >> a;
+        levels.insert(a);
+    }
+
+    if ((int)levels.size() == n)
+        cout << "I become the guy.";
+    else
+        cout << "Oh, my keyboard!";
+
+    return 0;
+}
