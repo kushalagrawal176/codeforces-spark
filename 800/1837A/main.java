@@ -5,7 +5,7 @@ public class main
     {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
-        
+    
         while(t-- > 0)
         {
             int x = sc.nextInt();
