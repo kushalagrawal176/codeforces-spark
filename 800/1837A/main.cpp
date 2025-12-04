@@ -22,6 +22,6 @@ int main()
             cout << x << "\n";
         }
     }
-
+    
     return 0;
 }
