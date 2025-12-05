@@ -2,7 +2,7 @@
 **Problem Link:** [https://codeforces.com/problemset/problem/1837/A](https://codeforces.com/problemset/problem/1837/A)  
 
 ---
-
+  
 ## Topics  
 - Number Theory  
 - Implementation  
