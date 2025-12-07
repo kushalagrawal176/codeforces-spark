@@ -1,4 +1,4 @@
-# Problem Number - 1926C Sum of Digits
+# Problem Number - 1926C Vlad and a Sum of Sum of Digits
 
 **Problem Link:** [https://codeforces.com/problemset/problem/1926/C](https://codeforces.com/problemset/problem/1926/C)
 
