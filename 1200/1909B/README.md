@@ -13,7 +13,7 @@
 ## Constraints  
 - 1 ≤ `t` ≤ 500 (number of test cases)  
 - 2 ≤ `n` ≤ 100 (array size)  
-- 1 ≤ `a[i]` ≤ 1017 (array elements)  
+- 1 ≤ `a[i]` ≤ 10¹⁷ (array elements)  
 - Time limit per test: 1 second  
 - Memory limit: 256 megabytes  
 
