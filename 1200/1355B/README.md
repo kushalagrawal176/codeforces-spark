@@ -10,8 +10,8 @@
 - Implementation  
 
 ## Constraints  
-- 1 ≤ `t` ≤ 2 ⋅ 105 (number of test cases)  
-- 1 ≤ `n` ≤ 2 ⋅ 10^5 (number of explorers per test case)  
+- 1 ≤ `t` ≤ 2 ⋅ 10⁵ (number of test cases)  
+- 1 ≤ `n` ≤ 2 ⋅ 10⁵ (number of explorers per test case)  
 - 1 ≤ `a[i]` ≤ `n` (minimum group size requirement for each explorer)  
 - Time limit per test: 2 second  
 - Memory limit: 256 megabytes  
