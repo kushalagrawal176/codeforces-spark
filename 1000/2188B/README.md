@@ -1,6 +1,6 @@
-# Problem Number - 218B Seats
+# Problem Number - 2188B Seats
 
-**Problem Link:** [https://codeforces.com/problemset/problem/218/B](https://codeforces.com/problemset/problem/218/B)
+**Problem Link:** [https://codeforces.com/problemset/problem/2188/B](https://codeforces.com/problemset/problem/2188/B)
 
 ---
 
