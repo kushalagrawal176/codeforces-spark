@@ -1,4 +1,4 @@
-# Problem Number - 2209B Find the Zero
+# Problem Number - 2209C Find the Zero
 
 **Problem Link:** [https://codeforces.com/problemset/problem/2209/B](https://codeforces.com/problemset/problem/2209/B)
 
