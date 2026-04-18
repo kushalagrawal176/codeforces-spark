@@ -1,5 +1,7 @@
 # Codeforces Solutions Repository
 
+Solved Problems: <!-- PROBLEM_COUNT -->
+
 This repository contains solutions to Codeforces problems. For each problem, you will find:
 
 - Java and C++ implementations of the solution.
