@@ -19,7 +19,7 @@
 ## Intuition / Approach
 - The problem asks whether it is possible to design a parkour path given two integers `x` and `y`.  
 - The key condition is that the sum `(x + y)` must be divisible by 3, non-negative, and large enough to cover the absolute difference in jumps.  
-- Specifically:
+- Conditions:
   - `(x + y) % 3 == 0` ensures the jumps can be evenly distributed.  
   - `(x + y) >= 0` ensures feasibility (no negative steps).  
   - `(x + y) / 3 >= abs(y)` ensures that the distribution of jumps can accommodate the larger of the two values.  
