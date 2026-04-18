@@ -1,6 +1,6 @@
 # Problem Number - 2209C Find the Zero
 
-**Problem Link:** [https://codeforces.com/problemset/problem/2209/B](https://codeforces.com/problemset/problem/2209/B)
+**Problem Link:** [https://codeforces.com/problemset/problem/2209/C](https://codeforces.com/problemset/problem/2209/C)
 
 ---
 
