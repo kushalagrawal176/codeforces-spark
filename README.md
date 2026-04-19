@@ -2,7 +2,7 @@
 
 [![Update Total Problem Count](https://github.com/kushalagrawal176/codeforces-spark/actions/workflows/update-readme.yml/badge.svg)](https://github.com/kushalagrawal176/codeforces-spark/actions/workflows/update-readme.yml)
 
-Solved Problems: <!--COUNT--> 615
+![Problems Solved](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/kushalagrawal176/codeforces-spark/main/count.json)
 
 This repository contains solutions to Codeforces problems. For each problem, you will find:
 
