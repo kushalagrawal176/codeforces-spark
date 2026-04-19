@@ -1,5 +1,7 @@
 # Codeforces Solutions Repository
 
+[![Update Total Problem Count](https://github.com/kushalagrawal176/codeforces-spark/actions/workflows/update-readme.yml/badge.svg)](https://github.com/kushalagrawal176/codeforces-spark/actions/workflows/update-readme.yml)
+
 Solved Problems: <!--COUNT--> 0
 
 This repository contains solutions to Codeforces problems. For each problem, you will find:
