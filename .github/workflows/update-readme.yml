@@ -1,39 +1,35 @@
-name: Update Problem Count
+name: Update Total Problem Count
 
 on:
   push:
+    branches: [ main ]
     paths:
-      - "codeforces/**"
-      - "!README.md"
+      - '[0-9]*/**'   # triggers only when numeric folders change
 
 jobs:
-  update-readme:
+  update-count:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v3
+    - name: Checkout repository
+      uses: actions/checkout@v3
 
-      - name: Count problems
-        run: | 
-          PROBLEM_COUNT=0
-          for d in codeforces/*; do
-            if [ -d "$d" ] && [[ $(basename "$d") =~ ^[0-9]+$ ]]; then
-              # count only immediate subdirectories (each problem is a folder)
-              COUNT=$(find "$d" -maxdepth 1 -type d ! -path "$d" | wc -l)
-              PROBLEM_COUNT=$((PROBLEM_COUNT + COUNT))
-            fi
-          done
-          echo "PROBLEM_COUNT=$PROBLEM_COUNT" >> $GITHUB_ENV
+    - name: Count problems and update README
+      run: |
+        # count folders inside numeric directories (like 800/problem1)
+        total=$(find . -type d -regex './[0-9]+/[^/]*' | wc -l)
 
-      - name: Update README
-        run: |
-          sed -i "s/<!-- PROBLEM_COUNT -->/${PROBLEM_COUNT}/g" README.md
+        echo "Total problems: $total"
 
-      - name: Commit changes
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add README.md
-          git commit -m "Update problem count to ${PROBLEM_COUNT}" || echo "No changes to commit"
-          git push
+        # update README using marker
+        sed -i "s/<!--COUNT--> [0-9]\+/<!--COUNT--> $total/" README.md
+
+    - name: Commit and push changes
+      run: |
+        git config user.name "github-actions"
+        git config user.email "actions@github.com"
+        git add README.md
+
+        # commit only if there are changes
+        git diff --cached --quiet || git commit -m "Update total problem count"
+        git push
