@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Count problems
-        run: |
+        run: | 
           PROBLEM_COUNT=0
           for d in codeforces/*; do
             if [ -d "$d" ] && [[ $(basename "$d") =~ ^[0-9]+$ ]]; then
