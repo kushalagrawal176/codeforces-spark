@@ -31,5 +31,5 @@ jobs:
         git add README.md
 
         # commit only if there are changes
-        git diff --cached --quiet || git commit -m "Update total problem count"
+        git diff --cached --quiet || git commit -m "Update README.md"
         git push
