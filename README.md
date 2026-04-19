@@ -1,6 +1,6 @@
 # Codeforces Solutions Repository
 
-Solved Problems: <!-- PROBLEM_COUNT -->
+Solved Problems: <!--COUNT--> 0
 
 This repository contains solutions to Codeforces problems. For each problem, you will find:
 
