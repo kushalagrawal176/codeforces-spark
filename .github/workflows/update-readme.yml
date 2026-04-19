@@ -1,10 +1,10 @@
-name: Update Total Problem Count
+name: Update Problem Count
 
 on:
   push:
     branches: [ main ]
     paths:
-      - '[0-9]*/**'   # triggers only when numeric folders change
+      - '[0-9]*/**'   # runs only when rating folders change
 
 jobs:
   update-count:
@@ -14,22 +14,27 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
 
-    - name: Count problems and update README
+    - name: Count total problems
       run: |
-        # count folders inside numeric directories (like 800/problem1)
         total=$(find . -type d -regex './[0-9]+/[^/]*' | wc -l)
-
         echo "Total problems: $total"
 
-        # update README using marker
-        sed -i "s/<!--COUNT--> [0-9]\+/<!--COUNT--> $total/" README.md
+        # create updated count.json
+        cat > count.json << EOF
+{
+  "schemaVersion": 1,
+  "label": "problems solved",
+  "message": "$total",
+  "color": "brightgreen"
+}
+EOF
 
-    - name: Commit and push changes
+    - name: Commit and push count.json
       run: |
         git config user.name "github-actions"
         git config user.email "actions@github.com"
-        git add README.md
 
-        # commit only if there are changes
-        git diff --cached --quiet || git commit -m "Update README.md"
+        git add count.json
+
+        git diff --cached --quiet || git commit -m "update problem count"
         git push
