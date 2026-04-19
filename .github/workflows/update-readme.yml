@@ -16,8 +16,15 @@ jobs:
 
       - name: Count problems
         run: |
-          COUNT=$(find codeforces -type f | wc -l)
-          echo "PROBLEM_COUNT=$COUNT" >> $GITHUB_ENV
+          PROBLEM_COUNT=0
+          for d in codeforces/*; do
+            if [ -d "$d" ] && [[ $(basename "$d") =~ ^[0-9]+$ ]]; then
+              # count only immediate subdirectories (each problem is a folder)
+              COUNT=$(find "$d" -maxdepth 1 -type d ! -path "$d" | wc -l)
+              PROBLEM_COUNT=$((PROBLEM_COUNT + COUNT))
+            fi
+          done
+          echo "PROBLEM_COUNT=$PROBLEM_COUNT" >> $GITHUB_ENV
 
       - name: Update README
         run: |
