@@ -4,22 +4,26 @@ on:
   push:
     branches: [ main ]
     paths:
-      - '[0-9]*/**'   # runs only when rating folders change
+      - '[0-9]*/**'   # only numeric folders like 800/, 900/
+
+permissions:
+  contents: write
 
 jobs:
   update-count:
+    # avoid infinite loop when commit to count.json
+    if: "!contains(github.event.head_commit.message, 'update problem count')"
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Count total problems
       run: |
-        total=$(find . -type d -regex './[0-9]+/[^/]*' | wc -l)
+        total=$(find . -mindepth 2 -maxdepth 2 -type d | wc -l)
         echo "Total problems: $total"
 
-        # create updated count.json
         cat > count.json << EOF
 {
   "schemaVersion": 1,
@@ -37,4 +41,6 @@ EOF
         git add count.json
 
         git diff --cached --quiet || git commit -m "update problem count"
+
+        git pull --rebase
         git push
