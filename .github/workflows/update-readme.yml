@@ -28,14 +28,14 @@ jobs:
         total=$(find . -mindepth 2 -maxdepth 2 -type d | wc -l)
         echo "Total problems: $total"
 
-        cat > count.json << EOF
-{
-  "schemaVersion": 1,
-  "label": "problems solved",
-  "message": "$total",
-  "color": "brightgreen"
-}
-EOF
+        cat > count.json <<EOF
+        {
+          "schemaVersion": 1,
+          "label": "problems solved",
+          "message": "$total",
+          "color": "brightgreen"
+        }
+        EOF
 
     - name: Commit and push count.json
       run: |
