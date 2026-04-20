@@ -28,7 +28,7 @@
 
 ## Note
 - In Java, Scanner solution will give Time Limit Exceeded, even though solution is O(n), as input is large and scanner is slow in reading.
-- BufferedReader is fast in reading input.
+- BufferedReader is fast in reading input and processing.
 
 ## Time and Space Complexity
 - **Time Complexity:** `O(n)` per test case, since we iterate through all piles once.  
