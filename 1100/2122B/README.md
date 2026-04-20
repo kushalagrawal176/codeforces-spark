@@ -26,6 +26,10 @@
 - Summing these adjustments across all piles gives the final answer for each test case.  
 - The solution is greedy: at each pile, we only need to check two conditions (`b > d` or `a > c`) and add the required difference.  
 
+## Note
+- In Java, Scanner solution will give Time Limit Exceeded as input is large and scanner is slow in reading
+- BufferedReader is fast in reading input
+
 ## Time and Space Complexity
 - **Time Complexity:** `O(n)` per test case, since we iterate through all piles once.  
 - **Space Complexity:** `O(1)`, only constant space is used for accumulation.  
