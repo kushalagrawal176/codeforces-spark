@@ -4,20 +4,24 @@ on:
   push:
     branches: [ main ]
     paths:
-      - '[0-9]*/**'   # only numeric folders like 800/, 900/
+      - '[0-9]*/**'
+    paths-ignore:
+      - '**.md'
+      - '**.yml'
+      - 'count.json'
 
 permissions:
   contents: write
 
 jobs:
   update-count:
-    # avoid infinite loop when commit to count.json
-    if: "!contains(github.event.head_commit.message, 'update problem count')"
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
+      with:
+        persist-credentials: false
 
     - name: Count total problems
       run: |
@@ -37,10 +41,6 @@ EOF
       run: |
         git config user.name "github-actions"
         git config user.email "actions@github.com"
-
         git add count.json
-
         git diff --cached --quiet || git commit -m "update problem count"
-
-        git pull --rebase
         git push
