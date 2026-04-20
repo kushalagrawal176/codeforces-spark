@@ -27,7 +27,7 @@
 - The solution is greedy: at each pile, we only need to check two conditions (`b > d` or `a > c`) and add the required difference.  
 
 ## Note
-- In Java, Scanner solution will give Time Limit Exceeded as input is large and scanner is slow in reading
+- In Java, Scanner solution will give Time Limit Exceeded as input is large and scanner is slow in reading.
 - BufferedReader is fast in reading input.
 
 ## Time and Space Complexity
