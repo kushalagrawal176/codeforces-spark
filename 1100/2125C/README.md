@@ -26,7 +26,7 @@
   - Subtract those divisible by triples (LCM of three primes).  
   - Add back those divisible by all four (LCM of 2, 3, 5, 7 = 210).  
 - This gives us a function `solve(x)` that counts good numbers up to `x`.  
-- The answer for range `[n, m]` is `solve(m) - solve(n - 1)`.  
+- The answer for range `[n, m]` is `solve(m) - solve(n - 1)`. 
 
 ### Formula:
 **solve(n) = n 
