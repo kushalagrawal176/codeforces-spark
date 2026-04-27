@@ -29,5 +29,5 @@
   4. If all checks pass, output **YES**; otherwise, **NO**.  
 
 ## Time and Space Complexity
-- **Time Complexity:** `O(n)` per test case, since we iterate through the permutation once and check conditions.  
+- **Time Complexity:** `O(n)` per test case, since we iterate through the permutation once and check conditions.
 - **Space Complexity:** `O(n)`, for storing positions of elements.  
