@@ -11,7 +11,7 @@
 
 ## Constraints
 - 1 ≤ `t` ≤ 10⁴  
-- 1 ≤ `n` ≤ 2 ⋅ 10⁵  
+- 1 ≤ `n` ≤ 2 ⋅ 10⁵
 - Time limit per test: 1 second  
 - Memory limit per test: 256 megabytes  
 
