@@ -33,7 +33,7 @@
 
 ## Time and Space Complexity
 - **Time Complexity:**  
-  - `O(n log n)` per test case due to sorting odd fields.  
+  - `O(n log n)` per test case due to sorting odd fields.
 - **Space Complexity:**  
   - `O(n)` for storing odd fields.  
   - Constant extra space for sums and counters.
