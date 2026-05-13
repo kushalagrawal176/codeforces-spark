@@ -7,7 +7,7 @@
 ## Topics
 - Geometry
 - Implementation
-- Brute Force Checking
+- Brute Force 
 
 ## Constraints
 - 1 ≤ `t` ≤ 100  
