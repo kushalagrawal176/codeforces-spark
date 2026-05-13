@@ -26,4 +26,4 @@
 
 ## Time and Space Complexity
 - **Time Complexity:** `O(1)` per test case, since only a fixed set of conditions are checked.  
-- **Space Complexity:** `O(1)`, no extra storage required.  
+- **Space Complexity:** `O(1)`, no extra storage required.
