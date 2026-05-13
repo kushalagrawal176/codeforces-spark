@@ -10,7 +10,7 @@
 - Brute Force 
 
 ## Constraints
-- 1 ≤ `t` ≤ 100  
+- 1 ≤ `t` ≤ 100
 - 1 ≤ `side lengths` ≤ 100  
 - Time limit per test: 1 second  
 - Memory limit per test: 256 megabytes  
