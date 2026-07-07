@@ -20,7 +20,8 @@
 - The problem requires us to merge two arrays, $R$ (red) and $B$ (blue), into a single array $C$ such that the relative order of elements from both arrays is preserved, and the maximum prefix sum of $C$ is maximized.
 - Since the elements of $R$ and $B$ can be interleaved arbitrarily without shifting their internal relative order, the choice to include a prefix of $R$ is completely independent of the choice to include a prefix of $B$.
 - To get the maximum possible prefix sum of the combined array $C$, we can **greedily** find the **maximum prefix sum** achievable by array $R$ alone (or 0 if all prefix sums are negative) and add it to the maximum prefix sum achievable by array $B$ alone (or 0 if negative). 
-- Thus, the problem reduces to finding $\max(0, \max(\text{prefix\_sums}(R))) + \max(0, \max(\text{prefix\_sums}(B)))$.
+- Thus, the problem reduces to finding:
+$$\max(0, \max(\text{prefix sums of } R)) + \max(0, \max(\text{prefix sums of } B))$$
 
 ## Time and Space Complexity
 - **Time Complexity:** $O(n + m)$ per test case, as we only need a single pass through both arrays to compute their maximum prefix sums.
