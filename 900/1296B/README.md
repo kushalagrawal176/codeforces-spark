@@ -1,4 +1,4 @@
-# 1296B - Food Buying
+# Problem Number 1296B - Food Buying
 
 **Problem Link:** [https://codeforces.com/problemset/problem/1296/B](https://codeforces.com/problemset/problem/1296/B)
 
