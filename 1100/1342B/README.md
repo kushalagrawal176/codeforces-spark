@@ -10,8 +10,8 @@
 - Constructive Algorithms
 
 ## Constraints
-- $ 1 \le T \le 100 $ (number of test cases)
-- $ 1 \le t \le 100 $ (length of the string for each test case)
+- $1 \le T \le 100$ (number of test cases)
+- $1 \le t \le 100$ (length of the string for each test case)
 - Time limit per test: 2.0 seconds
 - Memory limit per test: 256 megabytes
 
