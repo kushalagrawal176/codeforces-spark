@@ -17,7 +17,7 @@
 - Memory limit per test: 256 megabytes
 
 ## Intuition / Approach
-- We are given an array of $2n$ integers and need to select $n-1$ pairs of elements such that the sum of the greatest common divisor (GCD) of all chosen pairs is maximized or at least strictly greater than 1 (which means the sum of each chosen pair must be even).
+- We are given an array of $2n$ integers and need to select $n-1$ pairs of elements such that the sum of the greatest common divisor (GCD) of all chosen pairs is maximized or at least strictly greater than 1 (which means the sum of each chosen pair must be even). 
 - An even sum can be formed by adding either two even numbers or two odd numbers.
 - We can separate the indices of the given elements into two lists: one for even numbers and one for odd numbers.
 - We then pair up elements from the odd list and elements from the even list in pairs of two. Since we need $n-1$ pairs, we ensure that we always pick a total of $2n - 2$ elements (leaving exactly 2 elements out).
