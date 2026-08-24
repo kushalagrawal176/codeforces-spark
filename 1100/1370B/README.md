@@ -11,7 +11,7 @@
 
 ## Constraints
 - $1 \le t \le 10$ (Number of test cases)
-- $2 \le n \le 1000$
+- $2 \le n \le 1000$ (size of final array)
 - $1 \le a_i \le 1000$
 - Time limit per test: 1 second
 - Memory limit per test: 256 megabytes

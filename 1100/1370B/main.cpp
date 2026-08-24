@@ -23,7 +23,7 @@ int main()
                 {
                     if(a[k] != -1 && a[j] != -1 && (a[k]+a[j]) % 2 == 0 && counter < n-1)
                     {
-                        cout << k << " " << j << "\n";
+                        cout<<k<<" "<<j<<"\n";
                         a[k] = -1;
                         a[j] = -1;
                         counter++;
