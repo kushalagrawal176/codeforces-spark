@@ -10,8 +10,8 @@
 - Implementation
 
 ## Constraints
-- $1 ≤ t ≤ 10⁴$ (Test cases)
-- $1 ≤ n, k ≤ 2 × 10⁵$
+- $1 ≤ t ≤ 10^4$ (Test cases)
+- $1 ≤ n, k ≤ 2 × 10^5$
 - $1 ≤ u_i ≤ 2 × 10^9$
 - $1 ≤ a_j, b_j ≤ 2 × 10^9$
 - Time limit per test: 3 seconds
