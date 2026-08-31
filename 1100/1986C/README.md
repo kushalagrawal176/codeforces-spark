@@ -12,7 +12,7 @@
 
 ## Constraints
 - $1 \le t \le 10^4$ (number of test cases)
-- $1 \le m, n \le 2 \times 10^5$
+- $1 \le n, m \le 2 \times 10^5$
 - Sum of $n$ and sum of $m$ over all test cases do not exceed $2 \times 10^5$
 - Time limit per test: 2 seconds
 - Memory limit per test: 256 megabytes
