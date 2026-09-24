@@ -11,7 +11,7 @@
 
 ## Constraints
 - $1 \le n, m \le 1000$ (number of servers and requests)
-- Time limit per test: 2.0 seconds
+- Time limit per test: 2 seconds
 - Memory limit per test: 256 megabytes
 
 ## Intuition / Approach
