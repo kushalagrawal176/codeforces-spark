@@ -1,0 +1,25 @@
+import java.util.*;
+public class main
+{
+    public static void main(String args[]) 
+    {
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+ 
+        while(t-- > 0)
+        {
+            int n = sc.nextInt();
+            System.out.print(9);
+ 
+            if(n == 1) 
+            {
+                System.out.println();
+                continue;
+            }
+ 
+            for(int i=0;i<n-1;i++)
+                System.out.print((8+i)%10);
+            System.out.println();
+        }
+    }
+}
