@@ -21,7 +21,7 @@
 - From this equation, we can express each element of the original array as $a_i = b_i + x_i$.
 - We can maintain a running maximum variable (`max_val`) initialized to `0`. As we iterate through each element $b_i$:
   1. Calculate the current original element: $a_i = b_i + max-val$.
-  2. Update the running maximum: $\text{max\_val} = \max(max-val, a_i)$.
+  2. Update the running maximum: $\text{max-val} = \max(max-val, a_i)$.
   3. Output $a_i$.
 
 ## Time and Space Complexity
