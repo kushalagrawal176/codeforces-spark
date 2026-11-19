@@ -22,7 +22,7 @@
 - Updating every element in the range $[l, r]$ for each query would be too slow ($O(n)$ per query), leading to a Time Limit Exceeded (TLE).
 - However, we notice that we only need to track the **maximum element** of the array (`max_val`). 
 - For each query:
-  - If the current maximum value falls within the update range ($l \le \text{max\_val} \le r$), then applying `+` will increase the maximum value by 1, and `-` will decrease it by 1.
+  - If the current maximum value falls within the update range ($l \le max-val \le r$), then applying `+` will increase the maximum value by 1, and `-` will decrease it by 1.
   - If the current maximum value is outside the range $[l, r]$, the range update does not affect the maximum element, so it remains unchanged.
 - Thus, each operation can be processed in $O(1)$ time.
 
